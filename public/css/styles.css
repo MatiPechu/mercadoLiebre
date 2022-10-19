@@ -1,3 +1,11 @@
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
 *{
 margin: 0;
 padding: 0;
@@ -51,6 +59,12 @@ main article i{
 }
 .titulo {
     font-size: 24px;
+    background-color: #ebebeb ;
+    ;
+}
+.titulo img{
+    width: 500px;
+    height: 500px;
 }
 .precio{
     font-size: 18px;
