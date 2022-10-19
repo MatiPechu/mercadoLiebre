@@ -1,0 +1,101 @@
+:root{
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a;
+}
+*{
+    margin: 0;
+    padding: 0;
+font-family: 'Roboto', sans-serif;
+}
+@media (min-width: 365px){
+.descripcion{
+    display: none;
+}    
+}
+@media (min-width :769px){
+.descripcion{
+    display: block;
+}
+section article{box-shadow: 0px 0px 10px rgb(100,100,100) ;
+}}
+header  {
+background-color: #EAC926;
+}
+header ul li{
+    
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+body{
+    background-color: #EAC926;
+    font-size:  12px;
+}
+main{
+    text-align: center;
+    width: 90vw;
+    /*border-bottom: 10px;*/
+    background-color: gainsboro;
+}
+main article i{
+    border: #1FCF1A solid 2px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 7px;
+    padding-top: 7px;
+    border-radius: 50%;
+    text-align: center;
+    color:#1FCF1A;
+}
+.ultima{
+    border-top: #ebebeb solid 1px;
+    border-left: 15px;
+    border-right: 15px;
+    background-color: white;
+}
+.ofer{
+    border-top: #ebebeb solid 1px;
+    background-color: white;
+}
+.hand {
+    text-align: center;
+}
+.titulo {
+    font-size: 24px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+    color: #1FCF1A;
+}
+.descripcion{
+    font-size: 16px;
+}
+div.burger-menu{
+    text-align: center;
+}
+div.burger-menu i{
+color: white;
+background-color: #1259c3;
+padding: 10px;
+}
+
+footer section{
+    text-align: center;
+}
+footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+article{
+    text-align: center;
+    margin: 5px;
+}
