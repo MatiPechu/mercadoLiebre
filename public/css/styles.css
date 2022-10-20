@@ -23,8 +23,9 @@ header ul li a{
 body{
     
     font-size:  12px;
+    width: 100vw
 }
-main{
+    main{
     text-align: center;
     width: 90%;
     
