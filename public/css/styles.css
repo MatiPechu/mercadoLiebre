@@ -60,6 +60,9 @@ main article i{
 .main-header-top-bar h2{
     font-weight: 400;
 }
+main section article .imgArticule{
+    width: 100%;
+}
 .ultima{
     border-top: #ebebeb solid 1px;
     padding: 15px;
