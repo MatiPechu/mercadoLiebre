@@ -6,10 +6,54 @@ Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a;
 */
+
+/*.art-Ultima{
+    border-top: #ebebeb solid 1px;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.art-Ofer{
+    border-top: #ebebeb solid 1px;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.art-Ultima i{
+    
+}
+.art-Ultima .precio{
+    
+}
+.art-Ultima .descuento{
+    
+}
+.art-Ultima .descripcion{
+    
+}
+.art-Ofer .precio{
+    display: flex;
+    flex-wrap: wrap;
+    /*align-self: center;
+    flex-grow: 0.30;
+}
+.art-Ofer .descuento{
+    display: flex;
+    flex-wrap: wrap;
+    /*align-self: center;
+    flex-grow: 0.70;
+}
+.art-Ofer .descripcion{
+    align-self: flex-end;
+}*/
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
@@ -26,13 +70,17 @@ Verde: #39b54a;
 /*=======Estructuras=========*/
 
 body{
+    font-family: 'Roboto', sans-serif;
     font-size:  12px;
-    
+    background-color: #ebebeb;
 }
-
+/*=======Header/Nav=========*/
 .main-header  {
     background-color: #EAC926;
     padding: 20px;
+}
+.main-nav-bar{
+    display: none;
 }
 .main-nav-bar ul {
     list-style: none;
@@ -45,28 +93,11 @@ body{
     padding: 5px;
     font-size: 17px;
 }
-.main-nav-bar{
-    display: none;
+.main-nav-bar-left{
+    display: flex;
 }
-.searchBar{
-    padding-left: 15px;
-    margin: 15px;
-}
-
-    main{
-    text-align: center;
-    width: 90vw;
-    padding: 4px;
-}
-main article i{
-    border: #1FCF1A solid 2px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    padding-left: 7px;
-    padding-top: 7px;
-    border-radius: 50%;
-    text-align: center;
-    color:#1FCF1A;
+.main-nav-bar-right{
+    display: flex;
 }
 .searchBar{
     padding-left: 15px;
@@ -74,39 +105,6 @@ main article i{
 }
 .main-header-top-bar h2{
     font-weight: 400;
-}
-.ultima{
-    border-top: #ebebeb solid 1px;
-    padding: 15px;
-    background-color: white;
-}
-.ofer{
-    border-top: #ebebeb solid 1px;
-    padding: 15px;
-    background-color: white;
-}
-.hand {
-    text-align: center;
-    margin: 15px;
-}
-.titulo {
-    font-size: 24px;
-    background-color: #ebebeb ;
-    text-align: center;
-}
-.titulo img{
-    width: 350px;
-    height: 350px;
-}
-.precio{
-    font-size: 18px;
-}
-.descuento{
-    font-size: 16px;
-    color: #1FCF1A;
-}
-.descripcion{
-    font-size: 16px;
 }
 div.burger-menu{
     text-align: center;
@@ -118,17 +116,138 @@ div.burger-menu i{
     border-radius: 20%;
     font-size: 28px;
 }
-
-main section article{
+.hand {
     text-align: center;
-    margin: 5px;
+    margin: 15px;
 }
 
+main .bannerHome {
+    width: 100vw;
+}
+/*########--Main cards--#########*/
+main{
+    width: 90vw;
+    margin:auto;
+}
+
+main h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px 0 ;
+}
+main section .imgArtc{
+    width: 100%;
+}
+
+.card i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: #39b54a solid 1px;
+    color: #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    /*position: absolute;*/
+    right: 20px;
+    top: 15px;
+    margin-right: 5px;
+    order: -1;
+}
+.card {
+    padding: 15px;
+    background-color: white;
+    font-size: 24px;
+    background:  #fff;
+    margin: 10px 0;
+}
+.artHeader {
+    border-top: #ebebeb solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+    padding: 15px;
+    width: 100%;
+}
+.precio{
+    font-size: 18px;
+    margin-right: 5px;
+    /*align-self: center;*/
+    flex-grow: 0.30;
+}
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    /*align-self: center;*/
+    flex-grow: 0.70;
+}
+.descripcion{
+    display: none;
+    font-size: 16px;
+    /*align-self: flex-end;*/
+}
+
+
+/*------ REGISTER--------*/
+
+.nameandlast {
+    margin: 10px;
+}
+
+.user{
+    margin: 10px;
+}
+.e-mail{
+    margin: 10px;
+}
+.birthday{
+    margin: 10px;
+}
+.addressUser{
+    margin: 10px;
+}
+.userType{
+    margin: 10px;
+}
+.interes{
+    margin: 10px;
+}
+.avatar{
+    margin: 10px;
+}
+.password{
+    margin: 10px;
+}
+.password2{
+    margin: 10px;
+}
+.avatar{
+    margin: 10px;
+}
+
+
+
+
+
+
+
 /*FOOTER*/
+.main-footer{
+    margin-top: 80px;
+    padding: 20px 0;
+    background-color: #fff;
+}
+.main-footer-contain{
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
 footer section{
     text-align: center;
     margin-top: 30px;
-    width: 90vw;
+    width: 100%;
 }
 footer i{
     font-size: 2em;
@@ -141,14 +260,23 @@ footer i{
 
 /*MEDIA QUERI*/
 @media (max-width: 365px){
-    .descripcion{
-        display: none;
-        }
+    
     }
 
+@media (min-width: 366px){
+    .card {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
 @media (min-width :769px){
+    .card{
+        width: 24%;
+    }
     .descripcion{
-        display: block;    
+        display: flex;    
         }
     .main-header-top-bar{
         display: flex;
@@ -156,6 +284,8 @@ footer i{
         }
     .main-nav-bar{
         display: flex;
+        justify-content: space-between;
+
         }    
     .hand {
         max-width: 350px;
