@@ -126,7 +126,7 @@ main .bannerHome {
 }
 /*########--Main cards--#########*/
 main{
-    width: 90vw;
+    width: 90%;
     margin:auto;
 }
 
@@ -149,13 +149,14 @@ main section .imgArtc{
     color: #39b54a;
     background-color: #fff;
     border-radius: 50%;
-    /*position: absolute;*/
+    position: absolute;
     right: 20px;
-    top: 15px;
+    top: -15px;
     margin-right: 5px;
     order: -1;
 }
 .card {
+    display: block;
     padding: 15px;
     background-color: white;
     font-size: 24px;
@@ -163,29 +164,28 @@ main section .imgArtc{
     margin: 10px 0;
 }
 .artHeader {
+    width: 100%;
     border-top: #ebebeb solid 1px;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     position: relative;
     padding: 15px;
-    width: 100%;
 }
 .precio{
     font-size: 18px;
-    margin-right: 5px;
-    /*align-self: center;*/
-    flex-grow: 0.30;
+    width: 30%;
 }
 .descuento{
     font-size: 16px;
     color: #39b54a;
-    /*align-self: center;*/
-    flex-grow: 0.70;
+    width: 70%;
+    font-weight: normal;
 }
 .descripcion{
     display: none;
     font-size: 16px;
+    margin-top: 20px;
     /*align-self: flex-end;*/
 }
 
@@ -259,25 +259,45 @@ footer i{
 
 
 /*MEDIA QUERI*/
-@media (max-width: 365px){
-    
-    }
 
-@media (min-width: 366px){
+/*@media (max-width: 365px){}*/
+
+@media (min-width: 361px){
+    /*Estas partes son las que cambie he hiceron las pagina adaptable */
+    
     .card {
-        display: flex;
+        width: 45%;
+        /*display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        Esto no iba por que esto hace flex a todo el conjunto
+        */
+    } 
+    .descripcion {
+        display: block;
     }
+    section article{box-shadow: 0px 0px 10px rgb(100,100,100) ;
+    }
+    .products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .precio, .descuento{
+        width: 50%;
+    } 
 }
 
 @media (min-width :769px){
     .card{
-        width: 24%;
+        width: 22%;
     }
-    .descripcion{
+    /*.descripcion{
         display: flex;    
-        }
+        }*/
+    
     .main-header-top-bar{
         display: flex;
         justify-content: space-between;
@@ -294,6 +314,5 @@ footer i{
     .burger-menu{
         display: none;
         }
-    section article{box-shadow: 0px 0px 10px rgb(100,100,100) ;
-        }
+    
     }
