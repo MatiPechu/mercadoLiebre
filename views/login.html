@@ -6,57 +6,61 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Liebre</title>
         <link rel="icon" href="/images/logo-mercado-liebre.svg">
-        
-        
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         rel="stylesheet" />
-        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/login.css">
     </head>
-<body>
-    <header>
-        <section class="main-header-top-bar">
-        <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo">
-        <section class="searchBar">
-            <input type="text" placeholder="Buscar cardos, marcas"  >
-            <button type="submit"><i class="fas fa-search" ></i> </button>
-        </section>
-        <p class="hand">
-            <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-        </section>
-        <nav class="main-nav-bar">
-            <section class="main-nav-bar-left">
-                <ul>
-                    <li><a href="#" target="_blank">Ofertas</a></li>
-                    <li><a href="#" target="_blank">Tiendas Oficiales</a></li>
-                    <li><a href="#" target="_blank">Vender</a></li> 
-                    <li><a href="#" target="_blank">Ayuda</a></li>
-                </ul>
+    <body>
+        <header >
+            <section class="main-header-top-bar">
+                <a href="/">
+                    <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo">
+                </a> 
+                <section class="searchBar">
+                    <form  action="#" method="get" class="buscar">
+                        <input type="text" placeholder="Buscar productos, marcas y mas" class="input"  >
+                        <button type="submit"><i class="fas fa-search" ></i> </button>
+                    </form>
+                </section>
+                <p class="hand">
+                <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </section>
-            <section class="main-nav-bar-right">
-                <ul>
-                    <li><a href="/register" target="_blank">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/login" target="_blank">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="#" target="_blank">Mis compras <i class="fas fa-shopping-basket"></i></a></li>     
-                </ul>
-            </section> 
-        </nav>
-        <div class="burger-menu">
-            <i class="fas fa-bars"></i>
-            </div>  
-    </header>
+            <nav class="main-nav-bar">
+                <section class="main-nav-bar-left">
+                    <ul>
+                        <li><a href="#" target="_blank">Ofertas</a></li>
+                        <li><a href="#" target="_blank">Tiendas Oficiales</a></li>
+                        <li><a href="#" target="_blank">Vender</a></li> 
+                        <li><a href="#" target="_blank">Ayuda</a></li>
+                    </ul>
+                </section>
+                <section class="main-nav-bar-right">
+                    <ul>
+                        <li><a href="/register" target="_blank">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                        <li><a href="/login" target="_blank">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                        <li><a href="#" target="_blank">Mis compras <i class="fas fa-shopping-basket"></i></a></li>     
+                    </ul>
+                </section> 
+            </nav>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+                </div>  
+        </header>
     <main>
-        <Form class="nameandlast" action="#" method="post">
-            <label for="nombreApellido">Nombre y apellido</label>
-            <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Nombre y apellido">
-        </Form>
-        <Form  class="user" action="#" method="post">
-            <label for="nombreUsuario">Nombre de usuario</label>
-            <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario">
-        </Form>
-        <form action="/">
-            <button>Enviar</button>
-        </form>
+        <section class="log-contain">
+            <Form class="login-form" action="#" method="post">
+                <article class="form-item">
+                <label for="nombreUsuario"></label>
+                <input type="text" name="nombreApellido" id="nombreUsuario" placeholder="Nombre de usuario"class="item-text">
+                </article>
+                <article class="form-item">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder= "Ingresá tu contraseña" class="item-text">
+                </article>
+                <button type="submit" class="boton-login">Enviar</button>
+            </Form>
+        </section>
     </main>
 <footer class="main-footer">
     <section class="main-footer-contain">
