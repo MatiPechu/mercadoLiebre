@@ -25,6 +25,9 @@ body{
 header  {
     background-color: #EAC926;
     padding: 20px;
+    width: 100%;
+
+
 }
 .main-header-top-bar{
     display: flex;
@@ -98,7 +101,7 @@ main{
 }
 
 
-/*------ REGISTER--------*/
+/*------ Formulario Login--------*/
 .log-contain{
     padding: 20px 15px;
 }
