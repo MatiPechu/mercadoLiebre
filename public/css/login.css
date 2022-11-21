@@ -113,6 +113,10 @@ main{
     padding-bottom: 15px;
     
 }
+.form-item input, button{
+    border: none;
+
+}
 .control-formulario label{
     margin-bottom: 5px;
     font-style: italic;
@@ -215,6 +219,10 @@ footer i{
             display: flex;
             justify-content: space-between;
         }
+    .log-contain{
+        max-width: 70%;
+        margin: auto;
+    }
 }
 @media (min-width :769px){
     .card{
