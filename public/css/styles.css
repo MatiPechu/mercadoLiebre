@@ -64,6 +64,7 @@ Verde: #39b54a;
 }
 .bannerHome img {
     width: 100%;
+    margin-top: 251px; 
 }
 
 
@@ -78,6 +79,9 @@ body{
 header  {
     background-color: #EAC926;
     padding: 20px;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
 }
 .main-header-top-bar{
     display: flex;
@@ -100,6 +104,7 @@ header  {
     display: inline-block;
     padding: 8px;
     font-size: 17px;
+    text-align: center;
 }
 .main-nav-bar-left{
     display: flex;
@@ -148,6 +153,7 @@ main .bannerHome {
 main{
     width: 90%;
     margin:auto;
+    
 }
 
 main h3{
@@ -174,6 +180,9 @@ main section .imgArtc{
     top: -15px;
     margin-right: 5px;
     order: -1;
+}
+.products{
+    
 }
 .card {
     display: block;
@@ -212,49 +221,6 @@ main section .imgArtc{
 }
 
 
-/*------ REGISTER--------*/
-
-.nameandlast {
-    margin: 10px;
-}
-
-.user{
-    margin: 10px;
-}
-.e-mail{
-    margin: 10px;
-}
-.birthday{
-    margin: 10px;
-}
-.addressUser{
-    margin: 10px;
-}
-.userType{
-    margin: 10px;
-}
-.interes{
-    margin: 10px;
-}
-.avatar{
-    margin: 10px;
-}
-.password{
-    margin: 10px;
-}
-.password2{
-    margin: 10px;
-}
-.avatar{
-    margin: 10px;
-}
-
-
-
-
-
-
-
 /*FOOTER*/
 .main-footer{
     margin-top: 80px;
@@ -287,15 +253,7 @@ footer i{
 @media (min-width: 361px){
     /*Estas partes son las que cambie he hiceron las pagina adaptable */
     
-    .card {
-        /*width: 45%;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        Esto no iba por que esto hace flex a todo el conjunto
-        */
-    } 
-    .descripcion {
+        .descripcion {
         display: block;
     }
     section .card{box-shadow: 0px 0px 10px rgb(100,100,100) ;
@@ -313,6 +271,12 @@ footer i{
     } 
 }
 @media (min-width:481px){
+    .bannerHome img {
+        margin-top: 0;
+    }
+    header{
+        position:unset;
+    }
     .logo{
         max-width: 500px;
     }
