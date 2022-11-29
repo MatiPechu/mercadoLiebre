@@ -3,13 +3,13 @@ const path = require ("path")
 const mainController={
 
 index:(req, res) => {
-        res.sendFile(path.resolve("./views/home.html"))    
+        res.render("home")    
         },
 login:(req, res) => {
-    res.sendFile(path.resolve("./views/login.html"))    
+    res.render("login")    
     },
 register:(req, res) => {
-    res.sendFile(path.resolve("./views/register.html"))    
+    res.render("register")    
     }        
 }
 module.exports =mainController

@@ -10,4 +10,6 @@ app.listen(PORT,() => console.log("Listen on port " + PORT));
 
 app.use(express.static('public'));
 
+app.set("view engine","ejs")
+
 app.use("/",mainRouters)
